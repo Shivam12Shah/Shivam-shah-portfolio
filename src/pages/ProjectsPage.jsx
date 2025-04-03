@@ -12,7 +12,7 @@ const ProjectsPage = () => {
       tittle: "E-Store",
       skills: ["Reactjs", "javaScript", "NodeJs", "JWT Authentication", "Google Authentication" ,"ExpressJs", "Payment Gateway", "Nodemailer", "socket.io", "Mongodb", "Docker", "Github", "vercel", "Render",],
       live: "https://e-store-sooty-phi.vercel.app/",
-      gitHub: "https://github.com/yogendra09/E-COMMERCE_APP.git"
+      gitHub: "https://github.com/Shivam12Shah/Learnify_backend-main"
     },
     {
       image: "https://plus.unsplash.com/premium_photo-1720287601920-ee8c503af775?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
