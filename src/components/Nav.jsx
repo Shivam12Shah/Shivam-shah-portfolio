@@ -6,7 +6,7 @@ import { IoClose } from 'react-icons/io5';
 const Nav = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const resumeUrl = '/assets/resume/shivam-shah-resume.pdf'; // Correct path to your resume file
+  const resumeUrl = '/assets/resume/shivam-shah.pdf'; // Correct path to your resume file
 
 
 
