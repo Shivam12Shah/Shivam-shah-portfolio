@@ -1,7 +1,7 @@
 
 import Button from "../components/Button";
 import { HiArrowLongRight } from "react-icons/hi2";
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaDownload } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa6";
@@ -19,7 +19,7 @@ const Hero = () => {
   };
 
   return (
-    <div className="py-28">
+    <div className="pt-20 pb-10">
       <div className="h-[30vh] lg:h-[50vh]  flex flex-col justify-center">
         <div className="flex justify-start lg:gap-[8vw]">
           <h1 className="text-5xl font-extrabold fira lg:text-[9.5vw]">
@@ -40,9 +40,8 @@ const Hero = () => {
       </div>
 
       <div className="text-start lg:relative lg:top-[-22vh] lg:left-[2vh]">
-        <p className="opensans w-[75%] lg:w-[27%] lg:text-[2.9vh]">
-          My Goal is to write maintainable, clean and understandable code to
-          process development was enjoyable.
+        <p className="font-sans font-light tracking-wide text-gray-300 w-[75%] lg:w-[27%] lg:text-[2.9vh]">
+          My goal is to build scalable, clean, and maintainable software. Drawing from my 3+ years of experience across freelance projects and full-time company roles, I strive to create impactful applications while making the development process enjoyable.
         </p>
       </div>
 
@@ -61,8 +60,12 @@ const Hero = () => {
           </Link>
           <Link to="https://www.linkedin.com/in/shivam-kumar-shah-19b347209/" target="_blank" rel="noopener noreferrer"  className="flex items-center gap-3 border-[1px] border-[#f5f5f5] rounded-full px-6 py-2">
             <FaLinkedinIn />
-            <h1 className="text-sm">Linkdin</h1>
+            <h1 className="text-sm">LinkedIn</h1>
           </Link>
+          <a href="/Shivam_shah_resume.pdf" download className="flex items-center gap-3 border-[1px] border-[#f5f5f5] rounded-full px-6 py-2 bg-[#f5f5f5] text-[#121212] hover:opacity-90 transition-opacity">
+            <FaDownload />
+            <h1 className="text-sm font-medium">Resume</h1>
+          </a>
         </div>
         {/* <div className="flex gap-3 mt-4 ">
           <div className="flex items-center gap-3 border-[1px] border-[#f5f5f5] rounded-full px-6 py-2">

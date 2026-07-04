@@ -1,5 +1,4 @@
-
-import { BsArrowUpRight } from 'react-icons/bs'
+import { BsArrowUpRight, BsDownload } from 'react-icons/bs'
 import { FaGithub } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 
@@ -37,27 +36,44 @@ const Card = ({ project }) => {
       </div>
 
       {/* Links Container */}
-      <div className='flex items-center gap-4'>
-        <Link
-          target='_blank'
-          to={project.gitHub}
-          className='p-3 border border-[#f5f5f5]/20 rounded-full 
-                     hover:bg-[#f5f5f5] hover:text-[#121212] 
-                     transition-colors duration-300'
-        >
-          <FaGithub className='text-xl' />
-        </Link>
+      <div className='flex items-center gap-4 flex-wrap'>
+        {project.gitHub && (
+          <Link
+            target='_blank'
+            to={project.gitHub}
+            className='p-3 border border-[#f5f5f5]/20 rounded-full 
+                       hover:bg-[#f5f5f5] hover:text-[#121212] 
+                       transition-colors duration-300'
+          >
+            <FaGithub className='text-xl' />
+          </Link>
+        )}
 
-        <Link
-          target='_blank'
-          to={project.live}
-          className='flex items-center gap-2 bg-[#f5f5f5] text-[#121212] 
-                     px-6 py-3 rounded-full font-medium
-                     hover:scale-105 transition-transform duration-300'
-        >
-          Live Demo
-          <BsArrowUpRight className='text-sm' />
-        </Link>
+        {project.live && (
+          <Link
+            target='_blank'
+            to={project.live}
+            className='flex items-center gap-2 bg-[#f5f5f5] text-[#121212] 
+                       px-6 py-3 rounded-full font-medium
+                       hover:scale-105 transition-transform duration-300'
+          >
+            Live Demo
+            <BsArrowUpRight className='text-sm' />
+          </Link>
+        )}
+
+        {project.appLink && (
+          <Link
+            target='_blank'
+            to={project.appLink}
+            className='flex items-center gap-2 bg-transparent text-[#f5f5f5] border border-[#f5f5f5]/40
+                       px-6 py-3 rounded-full font-medium hover:bg-[#f5f5f5] hover:text-[#121212]
+                       hover:scale-105 transition-transform duration-300'
+          >
+            Download App
+            <BsDownload className='text-sm' />
+          </Link>
+        )}
       </div>
     </div>
   )

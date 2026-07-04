@@ -6,7 +6,7 @@ import { IoClose } from 'react-icons/io5';
 const Nav = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const resumeUrl = '/assets/resume/shivam-shah.pdf'; // Correct path to your resume file
+  const resumeUrl = '/assets/resume/Shivam_shah_resume.pdf'; // Correct path to your resume file
 
 
 
@@ -35,6 +35,7 @@ const Nav = () => {
 
   const navLinks = [
     { name: 'About', id: 'about' },
+    { name: 'Experience', id: 'experience' },
     { name: 'Skills', id: 'skills' },
     { name: 'Projects', id: 'projects' },
     { name: 'Contact', id: 'contact' },
